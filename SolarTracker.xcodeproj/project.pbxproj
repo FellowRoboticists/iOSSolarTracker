@@ -22,6 +22,8 @@
 		5DEAB42C18AFCAC40020736F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEAB40B18AFCAC30020736F /* UIKit.framework */; };
 		5DEAB43418AFCAC40020736F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DEAB43218AFCAC40020736F /* InfoPlist.strings */; };
 		5DEAB43618AFCAC40020736F /* SolarTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB43518AFCAC40020736F /* SolarTrackerTests.m */; };
+		5DEAB44318AFDBA50020736F /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB44118AFDBA50020736F /* BLE.m */; };
+		5DEAB44518AFDC0B0020736F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEAB44418AFDC0B0020736F /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		5DEAB43118AFCAC40020736F /* SolarTrackerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SolarTrackerTests-Info.plist"; sourceTree = "<group>"; };
 		5DEAB43318AFCAC40020736F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5DEAB43518AFCAC40020736F /* SolarTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SolarTrackerTests.m; sourceTree = "<group>"; };
+		5DEAB44018AFDBA50020736F /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		5DEAB44118AFDBA50020736F /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		5DEAB44218AFDBA50020736F /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		5DEAB44418AFDC0B0020736F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DEAB44518AFDC0B0020736F /* CoreBluetooth.framework in Frameworks */,
 				5DEAB40A18AFCAC30020736F /* CoreGraphics.framework in Frameworks */,
 				5DEAB40C18AFCAC30020736F /* UIKit.framework in Frameworks */,
 				5DEAB40818AFCAC30020736F /* Foundation.framework in Frameworks */,
@@ -103,6 +110,8 @@
 		5DEAB40618AFCAC30020736F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DEAB44418AFDC0B0020736F /* CoreBluetooth.framework */,
+				5DEAB43F18AFDB8C0020736F /* BLE */,
 				5DEAB40718AFCAC30020736F /* Foundation.framework */,
 				5DEAB40918AFCAC30020736F /* CoreGraphics.framework */,
 				5DEAB40B18AFCAC30020736F /* UIKit.framework */,
@@ -153,6 +162,16 @@
 				5DEAB43218AFCAC40020736F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DEAB43F18AFDB8C0020736F /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				5DEAB44018AFDBA50020736F /* BLE.h */,
+				5DEAB44118AFDBA50020736F /* BLE.m */,
+				5DEAB44218AFDBA50020736F /* BLEDefines.h */,
+			);
+			name = BLE;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +275,7 @@
 				5DEAB42118AFCAC30020736F /* ViewController.m in Sources */,
 				5DEAB41818AFCAC30020736F /* AppDelegate.m in Sources */,
 				5DEAB41418AFCAC30020736F /* main.m in Sources */,
+				5DEAB44318AFDBA50020736F /* BLE.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
