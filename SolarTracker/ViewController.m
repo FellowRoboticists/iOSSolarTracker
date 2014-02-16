@@ -5,6 +5,7 @@
 //  Created by Dave Sieh on 2/15/14.
 //  Copyright (c) 2014 Dave Sieh. All rights reserved.
 //
+//  See LICENSE.txt for details.
 
 #import "ViewController.h"
 
@@ -389,7 +390,7 @@
 
 - (UInt16) intFromByte1:(UInt8) b1
                   byte2:(UInt8) b2 {
-    return (UInt16)(b1 | b2 << 8);
+    return (UInt16)(b2 | b1 << 8);
 }
 
 
