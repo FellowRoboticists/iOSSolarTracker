@@ -24,6 +24,8 @@
 		5DEAB43618AFCAC40020736F /* SolarTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB43518AFCAC40020736F /* SolarTrackerTests.m */; };
 		5DEAB44318AFDBA50020736F /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB44118AFDBA50020736F /* BLE.m */; };
 		5DEAB44518AFDC0B0020736F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEAB44418AFDC0B0020736F /* CoreBluetooth.framework */; };
+		5DEAB44818B91BE30020736F /* GestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB44718B91BE30020736F /* GestureViewController.m */; };
+		5DEAB44B18B922F70020736F /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DEAB44A18B922F70020736F /* AppSettings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		5DEAB44118AFDBA50020736F /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
 		5DEAB44218AFDBA50020736F /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		5DEAB44418AFDC0B0020736F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		5DEAB44618B91BE30020736F /* GestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GestureViewController.h; sourceTree = "<group>"; };
+		5DEAB44718B91BE30020736F /* GestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GestureViewController.m; sourceTree = "<group>"; };
+		5DEAB44918B922F70020736F /* AppSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		5DEAB44A18B922F70020736F /* AppSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,10 @@
 				5DEAB42018AFCAC30020736F /* ViewController.m */,
 				5DEAB42218AFCAC30020736F /* Images.xcassets */,
 				5DEAB40E18AFCAC30020736F /* Supporting Files */,
+				5DEAB44618B91BE30020736F /* GestureViewController.h */,
+				5DEAB44718B91BE30020736F /* GestureViewController.m */,
+				5DEAB44918B922F70020736F /* AppSettings.h */,
+				5DEAB44A18B922F70020736F /* AppSettings.m */,
 			);
 			path = SolarTracker;
 			sourceTree = "<group>";
@@ -274,8 +284,10 @@
 			files = (
 				5DEAB42118AFCAC30020736F /* ViewController.m in Sources */,
 				5DEAB41818AFCAC30020736F /* AppDelegate.m in Sources */,
+				5DEAB44B18B922F70020736F /* AppSettings.m in Sources */,
 				5DEAB41418AFCAC30020736F /* main.m in Sources */,
 				5DEAB44318AFDBA50020736F /* BLE.m in Sources */,
+				5DEAB44818B91BE30020736F /* GestureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +506,7 @@
 				5DEAB43B18AFCAC40020736F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5DEAB43C18AFCAC40020736F /* Build configuration list for PBXNativeTarget "SolarTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +515,7 @@
 				5DEAB43E18AFCAC40020736F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

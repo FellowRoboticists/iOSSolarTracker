@@ -8,11 +8,14 @@
 //  See LICENSE.txt for details.
 
 #import "AppDelegate.h"
+#import "AppSettings.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [AppSettings setDefaults];
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -8,6 +8,7 @@
 //  See LICENSE.txt for details.
 
 #import "ViewController.h"
+#import "GestureViewController.h"
 
 // Incoming command constants
 #define LEFT_TOP_IN 0x10
@@ -107,6 +108,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"ToGestures"]) {
+        // The modal to deal with gestures
+        GestureViewController *vc = segue.destinationViewController;
+        vc.ble = ble;
+    }
 }
 
 #pragma mark -
