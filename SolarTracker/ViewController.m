@@ -118,6 +118,10 @@
     }
 }
 
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationPortrait | UIInterfaceOrientationPortraitUpsideDown;
+}
+
 #pragma mark -
 #pragma mark BLE Delegate
 

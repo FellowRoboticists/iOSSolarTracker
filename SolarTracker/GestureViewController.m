@@ -78,6 +78,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSUInteger)supportedInterfaceOrientations {
+    return UIInterfaceOrientationPortrait | UIInterfaceOrientationPortraitUpsideDown;
+}
+
+
 #pragma mark -
 #pragma mark PickerView DataSource
 
